@@ -1,0 +1,30 @@
+/* this is a media query stylesheet */
+.container{
+    overflow:hidden;
+}
+.nav-toggle{
+    display: none;
+}
+.example-card{
+    height: 300px;
+}
+@media screen and (max-width:991px) {
+     .nav-toggle{
+    display:block;
+    margin-right: 20px;
+    } 
+    .nav-links{
+        display: none;
+    }
+    .example-area{
+       flex-wrap: wrap;
+        gap: 20px;
+    }
+    .example-card{
+        width: calc(50% - 10px);
+        height: 100px;
+    }
+    .logos{
+        justify-content: space-evenly;
+    }
+}
